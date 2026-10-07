@@ -1,0 +1,10 @@
+/* Week 2: Whiteboard | Parth Denge | PRN 240705201018 */
+body { margin:0; font-family:"Segoe UI", system-ui, sans-serif; background:#111827; color:#e5e7eb; text-align:center; }
+header { padding:16px; background:linear-gradient(120deg,#0ea5e9,#6366f1); color:#fff; }
+header h1 { margin:0; display:inline; margin-right:14px; font-size:22px; }
+.tools { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; padding:12px; background:#1f2937; }
+.tools button { padding:8px 14px; border:0; border-radius:8px; background:#374151; color:#fff; cursor:pointer; }
+.tools button.active { background:#6366f1; }
+.tools label { display:flex; align-items:center; gap:6px; font-size:14px; }
+canvas { background:#fff; margin:16px auto; display:block; border-radius:10px; max-width:96%; cursor:crosshair; touch-action:none; }
+footer { padding:14px; color:#9ca3af; font-size:13px; }

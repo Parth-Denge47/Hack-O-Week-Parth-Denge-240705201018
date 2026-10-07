@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Week 1: Library Management System | Author: Parth Denge | PRN: 240705201018 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System - Parth Denge (240705201018)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Library Management System</h1>
+    <p class="by">Built by Parth Denge &middot; PRN 240705201018</p>
+  </header>
+
+  <main>
+    <section class="stats" id="stats"></section>
+
+    <section class="card">
+      <h2>Add a Book</h2>
+      <form id="bookForm">
+        <input id="title" placeholder="Title" required>
+        <input id="author" placeholder="Author" required>
+        <select id="genre">
+          <option>Fiction</option><option>Science</option><option>Technology</option>
+          <option>History</option><option>Other</option>
+        </select>
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <input id="search" placeholder="Search by title or author...">
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="available">Available</option>
+          <option value="issued">Issued</option>
+        </select>
+      </div>
+      <table>
+        <thead><tr><th>#</th><th>Title</th><th>Author</th><th>Genre</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <p id="empty" class="muted" hidden>No books match your search.</p>
+    </section>
+  </main>
+
+  <footer>Parth Denge &middot; 240705201018 &middot; Hack-O-Week Week 1</footer>
+  <script src="app.js"></script>
+</body>
+</html>

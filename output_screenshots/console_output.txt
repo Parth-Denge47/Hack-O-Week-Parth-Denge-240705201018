@@ -1,0 +1,151 @@
+================================================================
+Week 3 - Python Essentials
+Parth Denge | PRN 240705201018
+================================================================
+Items in inventory: 3
+   Item('Notebook', price=40.0, qty=25) -> value 1000.0
+   Item('Pen', price=10.0, qty=150) -> value 1500.0
+   PerishableItem('Milk', price=60.0, qty=10) -> value 300.0
+Total inventory value: 2800.0
+Point add: Point(x=4, y=6)
+Squares of evens < 10: [0, 4, 16, 36, 64]
+Word lengths: {'data': 4, 'science': 7, 'python': 6}
+Unique initials: ['A', 'B']
+Flatten: [1, 2, 3, 4, 5]
+Fibonacci < 100: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+Chunks of 3: [[0, 1, 2], [3, 4, 5], [6, 7]]
+Running average: [2.0, 3.0, 4.0, 5.0]
+
+================================================================
+Week 4 - NumPy, Pandas & Data Visualisation
+Parth Denge | PRN 240705201018
+================================================================
+Pairwise distance matrix shape: (5, 5)
+Z-scored column means (~0): [ 0.  0. -0.]
+Missing values after cleaning: 0
+
+Revenue by region/category:
+ category  Clothing  Electronics   Grocery
+region                                   
+East      32974.49     25792.66  44259.80
+North     23260.58     18522.00  51238.28
+South     31130.54     20197.12  31090.68
+West      25254.60     31816.23  33397.77
+
+Top 3 months:
+ month
+2025-10    33316.82
+2025-12    31645.24
+2026-01    31321.75
+Name: revenue, dtype: float64
+[saved] output_screenshots/week04_dataviz.png
+
+================================================================
+Week 5 - Linear Algebra
+Parth Denge | PRN 240705201018
+================================================================
+dot: 32.0 | norm(a): 3.7417 | cosine: 0.9746
+Gram-Schmidt Q Q^T == I: True
+Dominant eigenvalue (power iteration): 3.61803 | numpy: 3.61803
+[saved] output_screenshots/week05_linear_algebra.png
+
+================================================================
+Week 6 - Calculus & Gradients
+Parth Denge | PRN 240705201018
+================================================================
+d/dx sin(x) at 0 (numeric): 1.0
+Autograd: c=-0.9640, dc/da=0.0707, dc/db=0.1413
+GD        final loss after 100 steps: 7.154e-17
+Momentum  final loss after 100 steps: 5.327e-04
+Adam      final loss after 100 steps: 3.993e-04
+[saved] output_screenshots/week06_gradients.png
+
+================================================================
+Week 7 - Regression
+Parth Denge | PRN 240705201018
+================================================================
+Normal equation weights: [-2.969   4.4542]
+Gradient descent weights: [-2.969   4.4542]
+Polynomial degree  1: train R2 = 0.8297
+Polynomial degree  3: train R2 = 0.9609
+Polynomial degree 12: train R2 = 0.9638
+[saved] output_screenshots/week07_regression.png
+
+================================================================
+Week 8 - Classification
+Parth Denge | PRN 240705201018
+================================================================
+OvR logistic accuracy: 0.9556
+KNN (k=5) accuracy   : 0.9556
+Binary (class 1): precision=0.974 recall=0.974 f1=0.974 AUC=0.999
+Confusion matrix:
+ [[42  2  1]
+ [ 2 36  0]
+ [ 1  0 51]]
+[saved] output_screenshots/week08_classification.png
+
+================================================================
+Week 9 - scikit-learn Workflow
+Parth Denge | PRN 240705201018
+================================================================
+Rows: 1500 | churn rate: 47.1% | missing cells: 90
+Logistic best params: {'model__C': 1} | CV AUC: 0.8139
+Forest   best params: {'model__max_depth': 4, 'model__n_estimators': 200} | CV AUC: 0.8047
+Logistic       test AUC = 0.8045
+Random Forest  test AUC = 0.7904
+
+Classification report (best model):
+               precision    recall  f1-score   support
+
+           0       0.74      0.71      0.72       198
+           1       0.69      0.72      0.70       177
+
+    accuracy                           0.71       375
+   macro avg       0.71      0.71      0.71       375
+weighted avg       0.72      0.71      0.71       375
+
+[saved] output_screenshots/week09_sklearn_pipeline.png
+
+================================================================
+Week 10 - Clustering
+Parth Denge | PRN 240705201018
+================================================================
+K-Means++  blobs: inertia=587.2, ARI=0.961
+Ward       blobs: ARI=0.961
+K-Means    moons: ARI=0.274
+DBSCAN     moons: ARI=1.000
+[saved] output_screenshots/week10_clustering.png
+
+================================================================
+Weeks 11 & 12 - PCA and t-SNE
+Parth Denge | PRN 240705201018
+================================================================
+Digits shape: (1797, 64)
+Explained variance (scratch): [0.1489 0.1362] | sklearn: [0.1489 0.1362]
+Components for 95% variance: 29 of 64
+Reconstruction MSE with 10 comps: 4.914
+CV accuracy with  5 PCA components: 0.7718
+CV accuracy with 20 PCA components: 0.9021
+CV accuracy with 64 PCA components: 0.9299
+[saved] output_screenshots/week11_12_pca_tsne.png
+
+================================================================
+Weeks 13 & 14 - Ensembles, Bias-Variance, Regularisation
+Parth Denge | PRN 240705201018
+================================================================
+Model            train acc   test acc
+Single tree         1.0000     0.7917
+Bagging             1.0000     0.8833
+Random Forest       1.0000     0.8850
+AdaBoost            0.8900     0.8583
+XGBoost             0.9886     0.9000
+LightGBM            1.0000     0.9050
+
+Bias-variance (tree depth -> bias^2, variance):
+  depth  1: bias^2=0.0759  variance=0.0381
+  depth  3: bias^2=0.0035  variance=0.0574
+  depth  6: bias^2=0.0029  variance=0.1008
+  depth 12: bias^2=0.0023  variance=0.1256
+
+Non-zero coefficients at smallest C -> L1: 1 | L2: 20
+[saved] output_screenshots/week13_14_ensembles_bias_variance.png

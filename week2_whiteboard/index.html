@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Week 2: Whiteboard | Author: Parth Denge | PRN: 240705201018 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whiteboard - Parth Denge (240705201018)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Canvas Whiteboard</h1>
+    <span>Parth Denge &middot; PRN 240705201018</span>
+  </header>
+  <div class="tools">
+    <button data-tool="pen" class="active">Pen</button>
+    <button data-tool="line">Line</button>
+    <button data-tool="rect">Rectangle</button>
+    <button data-tool="circle">Circle</button>
+    <button data-tool="eraser">Eraser</button>
+    <label>Color <input type="color" id="color" value="#2f6fed"></label>
+    <label>Size <input type="range" id="size" min="1" max="30" value="4"></label>
+    <button id="undo">Undo</button>
+    <button id="redo">Redo</button>
+    <button id="clear">Clear</button>
+    <button id="save">Save PNG</button>
+  </div>
+  <canvas id="board" width="1000" height="560"></canvas>
+  <footer>Parth Denge &middot; 240705201018 &middot; Hack-O-Week Week 2</footer>
+  <script src="app.js"></script>
+</body>
+</html>
