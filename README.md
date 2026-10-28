@@ -135,6 +135,20 @@ Parth Denge | PRN 240705201018
 
 ---
 
+### Weeks 15 and 16 - Model Persistence and a Neural Network from Scratch
+Code in `week15_16_neural_nets_from_scratch/` (tests: `test_week15_16.py`, 10 passing).
+- **Model deployment basics:** a scaler + random forest `Pipeline` (test accuracy 0.944) saved with `pickle` and
+  `joblib`; both reload with identical predictions. `joblib(compress=3)` shrinks the file from 540 KB to 105 KB.
+  Pickle files must only be loaded from trusted sources because unpickling can run code.
+- **Perceptron and activations:** the perceptron learns AND and OR (100%) but not XOR (50%), since XOR is not
+  linearly separable. Sigmoid, tanh, ReLU and their derivatives are plotted.
+- **Losses and optimisers:** MSE and binary cross-entropy; SGD, SGD with momentum, and Adam written from scratch.
+  All three reach 95.6% test accuracy on two moons; momentum and Adam reach a lower loss (0.0185 / 0.0198 vs 0.0323).
+- **Neural network from scratch (NumPy):** forward pass, loss, backpropagation and weight updates. A 2-4-1 network
+  solves XOR, and the analytic gradients match finite differences (max relative error 7e-8).
+
+![Weeks 15-16](output_screenshots/week15_16_neural_net_scratch.png)
+
 ### Weeks 17 and 18 - Deep Learning (PyTorch)
 Code in `week17_18_deep_learning/` (tests: `test_week17_18.py`, 11 passing).
 - **a. PyTorch basics:** tensors, autograd (checked against the analytic gradient) and a manual training loop that

@@ -18,6 +18,8 @@ DEMOS = [
     "week10_clustering/clustering.py",
     "week11_12_dimensionality_reduction/dimensionality_reduction.py",
     "week13_14_ensembles_bias_variance/ensembles.py",
+    "week15_16_neural_nets_from_scratch/model_persistence.py",
+    "week15_16_neural_nets_from_scratch/neural_net.py",
     "week17_18_deep_learning/dl_basics.py",
     "week17_18_deep_learning/cnn_regularization.py",
     "week17_18_deep_learning/sequence_models.py",
