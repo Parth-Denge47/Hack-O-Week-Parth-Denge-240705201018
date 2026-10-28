@@ -1,4 +1,4 @@
-"""Week 15 (c): RNN / LSTM / GRU sequence modelling - predict the next value of a noisy sine wave and
+"""Weeks 17-18 (c): RNN / LSTM / GRU sequence modelling - predict the next value of a noisy sine wave and
 solve a long-range "remember the first element" task.
 
 Author: Parth Denge | PRN: 240705201018
@@ -81,7 +81,7 @@ def memory_task_accuracy(kind, epochs=60, seed=0):
 
 
 def main():
-    banner("Week 15c - RNN / LSTM / GRU sequence modelling")
+    banner("Weeks 17-18c - RNN / LSTM / GRU sequence modelling")
     kinds = list(CELLS)
     curves, models = {}, {}
     for k in kinds:
@@ -106,9 +106,9 @@ def main():
     ax[2].bar([k.upper() for k in kinds], [mem[k] for k in kinds], color=["#9ca3af", "#2f6fed", "#10b981"])
     ax[2].axhline(0.5, color="r", ls="--", label="chance"); ax[2].legend(); ax[2].set_ylim(0.4, 1.05)
     ax[2].set_title("Long-range memory (15 steps)")
-    fig.suptitle("Week 15c - Sequence models", fontweight="bold")
+    fig.suptitle("Weeks 17-18c - Sequence models", fontweight="bold")
     fig.tight_layout(rect=[0, 0, 1, 0.94])
-    save_fig(fig, "week15c_sequence_models.png")
+    save_fig(fig, "week17_18c_sequence_models.png")
 
 
 if __name__ == "__main__":

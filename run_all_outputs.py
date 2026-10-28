@@ -18,12 +18,12 @@ DEMOS = [
     "week10_clustering/clustering.py",
     "week11_12_dimensionality_reduction/dimensionality_reduction.py",
     "week13_14_ensembles_bias_variance/ensembles.py",
-    "week15_deep_learning/dl_basics.py",
-    "week15_deep_learning/cnn_regularization.py",
-    "week15_deep_learning/sequence_models.py",
-    "week15_deep_learning/transfer_learning.py",
-    "week15_deep_learning/hf_transformers.py",
-    "week15_deep_learning/llm_apis.py",
+    "week17_18_deep_learning/dl_basics.py",
+    "week17_18_deep_learning/cnn_regularization.py",
+    "week17_18_deep_learning/sequence_models.py",
+    "week17_18_deep_learning/transfer_learning.py",
+    "week17_18_deep_learning/hf_transformers.py",
+    "week17_18_deep_learning/llm_apis.py",
 ]
 
 

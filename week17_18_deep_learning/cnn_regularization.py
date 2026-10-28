@@ -1,4 +1,4 @@
-"""Week 15 (b, d): CNN image classification (convolution + pooling) and regularisation
+"""Weeks 17-18 (b, d): CNN image classification (convolution + pooling) and regularisation
 (dropout, batch norm, early stopping) on the 8x8 scikit-learn Digits images.
 
 Author: Parth Denge | PRN: 240705201018
@@ -104,7 +104,7 @@ def run_experiments(epochs: int = 60):
 
 
 def main():
-    banner("Week 15b/d - CNN image classification + regularisation (Digits)")
+    banner("Weeks 17-18b/d - CNN image classification + regularisation (Digits)")
     res = run_experiments()
     print(f"{'config':28s} {'test acc':>9s} {'final val loss':>15s} {'epochs run':>11s}")
     for n, r in res.items():
@@ -120,9 +120,9 @@ def main():
     ax[2].bar(range(len(res)), [r["test_acc"] for r in res.values()], color="#2f6fed")
     ax[2].set_xticks(range(len(res))); ax[2].set_xticklabels(list(res), rotation=20, ha="right")
     ax[2].set_ylim(0.8, 1.0); ax[2].set_title("Held-out test accuracy")
-    fig.suptitle("Week 15b/d - CNN with dropout, batch norm and early stopping", fontweight="bold")
+    fig.suptitle("Weeks 17-18b/d - CNN with dropout, batch norm and early stopping", fontweight="bold")
     fig.tight_layout(rect=[0, 0, 1, 0.94])
-    save_fig(fig, "week15b_d_cnn_regularization.png")
+    save_fig(fig, "week17_18b_d_cnn_regularization.png")
 
 
 if __name__ == "__main__":

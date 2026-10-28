@@ -1,4 +1,4 @@
-"""Week 15 (e): Transfer learning with a pretrained CNN (ResNet-18, ImageNet weights).
+"""Weeks 17-18 (e): Transfer learning with a pretrained CNN (ResNet-18, ImageNet weights).
 
 The ImageNet backbone is frozen and used as a feature extractor; only a new linear head is trained on the
 Digits images (upscaled to 64x64 RGB). It is compared with the same architecture trained from scratch on the
@@ -82,7 +82,7 @@ def run(epochs=6):
 
 
 def main():
-    banner("Week 15e - Transfer learning with pretrained ResNet-18")
+    banner("Weeks 17-18e - Transfer learning with pretrained ResNet-18")
     res = run()
     print(f"{'setup':30s} {'trainable params':>17s} {'final test acc':>15s}")
     for n, r in res.items():
@@ -91,8 +91,8 @@ def main():
     for n, r in res.items():
         ax.plot(range(1, len(r["acc"]) + 1), r["acc"], "o-", label=n)
     ax.set_xlabel("epoch"); ax.set_ylabel("test accuracy"); ax.legend()
-    ax.set_title("Week 15e - Transfer learning vs training from scratch (200 training images)", fontsize=10)
-    save_fig(fig, "week15e_transfer_learning.png")
+    ax.set_title("Weeks 17-18e - Transfer learning vs training from scratch (200 training images)", fontsize=10)
+    save_fig(fig, "week17_18e_transfer_learning.png")
 
 
 if __name__ == "__main__":

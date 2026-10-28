@@ -1,4 +1,4 @@
-"""Week 15 (a): PyTorch basics - tensors, autograd and a hand-written training loop.
+"""Weeks 17-18 (a): PyTorch basics - tensors, autograd and a hand-written training loop.
 
 Author: Parth Denge | PRN: 240705201018
 """
@@ -67,7 +67,7 @@ def train_linear(epochs: int = 200, lr: float = 0.05, seed: int = 0):
 
 
 def main():
-    banner("Week 15a - PyTorch: tensors, autograd, training loop")
+    banner("Weeks 17-18a - PyTorch: tensors, autograd, training loop")
     for k, v in tensor_tour().items():
         print(f"{k:11s}: {v.tolist() if isinstance(v, torch.Tensor) else v}")
     print("\nautograd:", autograd_demo())
@@ -82,8 +82,8 @@ def main():
     xs = torch.linspace(-2, 2, 2).reshape(-1, 1)
     ax[1].plot(xs, model(xs).detach(), "r", label=f"fit: {w:.2f}x+{b:.2f}")
     ax[1].legend(); ax[1].set_title("Linear regression learned with autograd")
-    fig.suptitle("Week 15a - PyTorch training loop", fontweight="bold")
-    save_fig(fig, "week15a_pytorch_basics.png")
+    fig.suptitle("Weeks 17-18a - PyTorch training loop", fontweight="bold")
+    save_fig(fig, "week17_18a_pytorch_basics.png")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-"""Week 15 (g): Using LLM APIs - Anthropic, OpenAI, a local Ollama server, or an open model through
+"""Weeks 17-18 (g): Using LLM APIs - Anthropic, OpenAI, a local Ollama server, or an open model through
 Hugging Face. The first backend that is configured is used; nothing is faked when none is.
 
 Configuration (environment variables):
@@ -90,7 +90,7 @@ BACKENDS = {"anthropic": ask_anthropic, "openai": ask_openai, "ollama": ask_olla
 
 
 def main():
-    banner("Week 15g - LLM APIs")
+    banner("Weeks 17-18g - LLM APIs")
     backend = detect_backend()
     if backend is None:
         print("No LLM backend configured. Set ANTHROPIC_API_KEY or OPENAI_API_KEY, start Ollama "

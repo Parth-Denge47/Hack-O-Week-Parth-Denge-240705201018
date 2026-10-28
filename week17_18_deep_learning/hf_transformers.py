@@ -1,4 +1,4 @@
-"""Week 15 (f): Hugging Face Transformers basics - pretrained models via pipeline() and via the explicit
+"""Weeks 17-18 (f): Hugging Face Transformers basics - pretrained models via pipeline() and via the explicit
 tokenizer + model API.
 
 Needs internet on the first run to download the model weights (cached afterwards).
@@ -39,7 +39,7 @@ def manual_sentiment(texts):
 
 
 def main():
-    banner("Week 15f - Hugging Face Transformers")
+    banner("Weeks 17-18f - Hugging Face Transformers")
     print(f"Model: {SENTIMENT_MODEL}\n")
     print("pipeline() API:")
     for t, r in zip(SAMPLES, pipeline_sentiment(SAMPLES)):

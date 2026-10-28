@@ -1,4 +1,4 @@
-"""Tests for Week 15. Network-dependent parts (pretrained weights, Hugging Face, LLM APIs) are only tested
+"""Tests for Weeks 17-18. Network-dependent parts (pretrained weights, Hugging Face, LLM APIs) are only tested
 offline-safe: structure and wiring, not downloads.  Author: Parth Denge | PRN: 240705201018"""
 import os
 import sys
