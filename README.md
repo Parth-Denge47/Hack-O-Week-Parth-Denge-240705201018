@@ -132,3 +132,25 @@ retain ~90% classification accuracy. The last panel shows how perplexity changes
 ---
 
 Parth Denge | PRN 240705201018
+
+---
+
+### Week 15 - Deep Learning (PyTorch)
+Code in `week15_deep_learning/` (tests: `test_week15.py`, 11 passing).
+- **a. PyTorch basics:** tensors, autograd (checked against the analytic gradient) and a manual training loop that
+  recovers `y = 3x + 1` (learned 3.009x + 0.984).
+- **b/d. CNN + regularisation (Digits, 300 training images):** conv + max-pool CNN. Test accuracy: baseline 0.927,
+  dropout 0.933, batch norm 0.968, dropout + BN + early stopping 0.963.
+- **c. RNN / LSTM / GRU:** next-value prediction on noisy sines (LSTM MSE 0.0020) and a remember-the-first-token
+  task where all three cells reach ~99-100% (chance 50%).
+- **e. Transfer learning (ResNet-18, 200 training images):** frozen backbone 0.832 (5k trainable params),
+  fine-tuned 0.948, from scratch 0.914.
+- **f. Hugging Face:** `hf_transformers.py` (DistilBERT sentiment via `pipeline()` and tokenizer + model). Needs
+  internet for the first download; not run for the saved outputs.
+- **g. LLM APIs:** `llm_apis.py` supports Anthropic, OpenAI, Ollama or a local Hugging Face model; it needs an API
+  key or a running Ollama server, none was available here so it has not been run.
+
+![Week 15a](output_screenshots/week15a_pytorch_basics.png)
+![Week 15b/d](output_screenshots/week15b_d_cnn_regularization.png)
+![Week 15c](output_screenshots/week15c_sequence_models.png)
+![Week 15e](output_screenshots/week15e_transfer_learning.png)
